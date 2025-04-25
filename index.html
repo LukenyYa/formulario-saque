@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitar Saque</title>
+</head>
+<body style="font-family:sans-serif; padding:20px;">
+  <h2>Solicitação de Saque</h2>
+  <form action="https://formsubmit.co/lucasalves566758@gmail.com" method="POST">
+    <label>Nome completo:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>Valor a sacar (R$):</label><br>
+    <input type="number" name="valor" required><br><br>
+
+    <label>Chave Pix:</label><br>
+    <input type="text" name="chave_pix" required><br><br>
+
+    <label>Observações:</label><br>
+    <textarea name="observacoes"></textarea><br><br>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://google.com"> <!-- ou link de agradecimento -->
+    
+    <button type="submit">Enviar Solicitação</button>
+  </form>
+</body>
+</html>
